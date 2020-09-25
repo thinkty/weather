@@ -1,9 +1,6 @@
 import React from 'react';
 
 export default function App() {
-  const backgroundColor = '#000'; // '#efeae9';
-  const mainColor = '#f85e0d';
-
   return (
     <div
       style={{
@@ -13,9 +10,10 @@ export default function App() {
         justifyContent: 'center',
         alignContent: 'center',
         gridTemplateColumns: 'auto',
-        backgroundColor,
+        backgroundColor: '#000',
         margin: -8,
         padding: 0,
+        fontFamily: 'sans-serif',
         color: '#e0e0e0',
       }}
     >
