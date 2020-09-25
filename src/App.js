@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+export default function App() {
+  const backgroundColor = '#000'; // '#efeae9';
+  const mainColor = '#f85e0d';
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      style={{
+        width: '100vw',
+        height: '100vh',
+        display: 'grid',
+        justifyContent: 'center',
+        alignContent: 'center',
+        gridTemplateColumns: 'auto',
+        backgroundColor,
+        margin: -8,
+        padding: 0,
+        color: '#e0e0e0',
+      }}
+    >
+      Simple Weather App
     </div>
   );
 }
-
-export default App;
