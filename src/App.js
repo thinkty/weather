@@ -1,6 +1,9 @@
 import React from 'react';
+import LocationInput from './LocationInput';
 
 export default function App() {
+  const titleFontSize = window.innerWidth > 1000 ? '50px' : '6vw';
+
   return (
     <div
       style={{
@@ -17,7 +20,10 @@ export default function App() {
         color: '#e0e0e0',
       }}
     >
-      Simple Weather App
+      <h1 style={{ fontSize: titleFontSize }}>
+        Simple Weather App
+      </h1>
+      <LocationInput />
     </div>
   );
 }
