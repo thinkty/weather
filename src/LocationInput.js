@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 /**
  * A component to take location (simple text) input
  */
-export default class LocationInput extends Component {
+export default class LocationInput extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
