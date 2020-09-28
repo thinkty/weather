@@ -20,7 +20,12 @@ export default function App() {
         color: '#e0e0e0',
       }}
     >
-      <h1 style={{ fontSize: titleFontSize }}>
+      <h1
+        style={{
+          fontSize: titleFontSize,
+          textAlign: 'center'
+        }}
+      >
         Simple Weather App
       </h1>
       <LocationInput />
