@@ -1,12 +1,14 @@
 import React from 'react';
 import LocationInput from './LocationInput';
 import Result from './Result';
+const data = require('./sample.json');
 
 export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: null
+      // data: null
+      data: data
     };
   }
 
