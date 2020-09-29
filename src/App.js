@@ -1,5 +1,6 @@
 import React from 'react';
 import LocationInput from './LocationInput';
+import Result from './Result';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -14,6 +15,7 @@ export default class App extends React.Component {
   }
 
   render() {
+    const { data } = this.state;
     const titleFontSize = window.innerWidth > 1000 ? '50px' : '6vw';
 
     return (
@@ -41,6 +43,10 @@ export default class App extends React.Component {
           Simple Weather App
         </h1>
         <LocationInput update={this.updateData} />
+        {
+          data &&
+          <Result data={data} />
+        }
       </div>
     );
   }
