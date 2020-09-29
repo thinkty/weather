@@ -29,7 +29,7 @@ export default class LocationInput extends React.Component {
     fetch(url)
       .then((data) => data.json())
       .then((data) => {
-        this.props.updateData(data);
+        this.props.update(data);
       })
       .catch(() => {
         alert('Oops, something went wrong');
