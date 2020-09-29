@@ -8,15 +8,27 @@ export default class LocationInput extends React.Component {
     super(props);
     this.state = {
       lat: '',
-      long: '',
+      lon: '',
       hover: false
     };
   }
 
   onSubmit = (event) => {
     event.preventDefault();
-    const { lat, long } = this.state;
-    console.log(`lat: ${lat} / long: ${long}`);
+    const { lat, lon } = this.state;
+    
+    const url = new URL('http://localhost:8080/api/weather');
+    const params = { lat, lon };
+    url.search = new URLSearchParams(params).toString();
+
+    fetch(url)
+      .then((data) => data.json())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch(() => {
+        alert('Oops, something went wrong');
+      });
   }
 
   onChange = (event) => {
@@ -32,7 +44,7 @@ export default class LocationInput extends React.Component {
   }
 
   render() {
-    const { lat, long, hover } = this.state;
+    const { lat, lon, hover } = this.state;
     const isMobile = window.innerWidth < 1000;
     const width = isMobile ? '60vw' : '150px';
     const inputStyle = {
@@ -82,8 +94,8 @@ export default class LocationInput extends React.Component {
           type="number"
           step="0.000001"
           placeholder="Longitude"
-          id="long"
-          value={long}
+          id="lon"
+          value={lon}
           min={-180}
           max={180}
           onChange={this.onChange}
