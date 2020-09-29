@@ -1,7 +1,7 @@
 import React from 'react';
 
 /**
- * A component to take location (simple text) input
+ * A component to take location input
  */
 export default class LocationInput extends React.Component {
   constructor(props) {
