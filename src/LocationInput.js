@@ -13,6 +13,11 @@ export default class LocationInput extends React.Component {
     };
   }
 
+  /**
+   * Send a request to the API server with latitude and longitude as paramters
+   * Parse the weather data from the response and update the parent component's
+   * state
+   */
   onSubmit = (event) => {
     event.preventDefault();
     const { lat, lon } = this.state;
@@ -24,7 +29,7 @@ export default class LocationInput extends React.Component {
     fetch(url)
       .then((data) => data.json())
       .then((data) => {
-        console.log(data);
+        this.props.updateData(data);
       })
       .catch(() => {
         alert('Oops, something went wrong');
