@@ -14,7 +14,7 @@ export default class LocationInput extends React.Component {
   }
 
   /**
-   * Send a request to the API server with latitude and longitude as paramters
+   * Send a request to the API server with latitude and longitude as parameters
    * Parse the weather data from the response and update the parent component's
    * state
    */
