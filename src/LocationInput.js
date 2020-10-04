@@ -22,7 +22,7 @@ export default class LocationInput extends React.Component {
     event.preventDefault();
     const { lat, lon } = this.state;
     
-    const url = new URL('http://localhost:8080/api/weather');
+    const url = new URL('https://data.thinkty.net/api/weather');
     const params = { lat, lon, units: 'metric' };
     url.search = new URLSearchParams(params).toString();
 
