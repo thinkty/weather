@@ -118,6 +118,8 @@ export default class LocationInput extends React.Component {
           onMouseDown={this.onMouseEnter}
           onMouseLeave={this.onMouseLeave}
           onMouseUp={this.onMouseLeave}
+          onFocus={this.onMouseEnter}
+          onBlur={this.onMouseLeave}
           style={submitStyle}
         />
       </form>
