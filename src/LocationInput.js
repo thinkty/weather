@@ -51,14 +51,15 @@ export default class LocationInput extends React.Component {
   render() {
     const { lat, lon, hover } = this.state;
     const isMobile = window.innerWidth < 1000;
-    const width = isMobile ? '60vw' : '50px';
+    const width = isMobile ? '40vw' : '50px';
+    const borderStyle = isMobile ? 'none none none solid' : 'none none solid none';
     const inputStyle = {
       width,
       backgroundColor: 'transparent',
       color: '#fff',
       fontSize: '15px',
       padding: 10,
-      borderStyle: 'none none solid none',
+      borderStyle,
       outline: 'none'
     };
     const submitStyle = {
@@ -83,7 +84,7 @@ export default class LocationInput extends React.Component {
         }}
       >
         <label>
-          Latitude
+          Latitude&nbsp;
           <input
             required
             type="number"
@@ -97,7 +98,7 @@ export default class LocationInput extends React.Component {
           />
         </label>
         <label>
-          Longitude
+          Longitude&nbsp;
           <input
             required
             type="number"
