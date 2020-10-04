@@ -6,7 +6,7 @@ import React from 'react';
 export default function Result(props) {
   const { data } = props;
   const { current, daily } = data;
-  const fontSize = window.innerWidth > 1000 ? '3vw' : '18px';
+  const fontSize = window.innerWidth > 1000 ? '50px' : '18px';
 
   const { temp, feels_like, humidity, wind_speed, weather } = current;
   const { temp: daily_temp } = daily[0];

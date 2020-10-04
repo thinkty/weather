@@ -51,7 +51,7 @@ export default class LocationInput extends React.Component {
   render() {
     const { lat, lon, hover } = this.state;
     const isMobile = window.innerWidth < 1000;
-    const width = isMobile ? '60vw' : '150px';
+    const width = isMobile ? '60vw' : '50px';
     const inputStyle = {
       width,
       backgroundColor: 'transparent',
@@ -82,30 +82,34 @@ export default class LocationInput extends React.Component {
           gap: isMobile ? '10px' : '40px'
         }}
       >
-        <input
-          required
-          type="number"
-          step="0.000001"
-          placeholder="Latitude"
-          id="lat"
-          value={lat}
-          min={-90}
-          max={90}
-          onChange={this.onChange}
-          style={inputStyle}
-        />
-        <input
-          required
-          type="number"
-          step="0.000001"
-          placeholder="Longitude"
-          id="lon"
-          value={lon}
-          min={-180}
-          max={180}
-          onChange={this.onChange}
-          style={inputStyle}
-        />
+        <label>
+          Latitude
+          <input
+            required
+            type="number"
+            step="0.000001"
+            id="lat"
+            value={lat}
+            min={-90}
+            max={90}
+            onChange={this.onChange}
+            style={inputStyle}
+          />
+        </label>
+        <label>
+          Longitude
+          <input
+            required
+            type="number"
+            step="0.000001"
+            id="lon"
+            value={lon}
+            min={-180}
+            max={180}
+            onChange={this.onChange}
+            style={inputStyle}
+          />
+        </label>
         <input
           type="submit"
           value="Submit"
