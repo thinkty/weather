@@ -28,8 +28,6 @@ export default class App extends React.Component {
           alignContent: 'center',
           gridTemplateColumns: 'auto',
           backgroundColor: '#000',
-          margin: -8,
-          padding: 0,
           fontFamily: 'sans-serif',
           color: '#e0e0e0',
         }}

@@ -6,6 +6,7 @@ import React from 'react';
 export default function Result(props) {
   const { data } = props;
   const { current, daily } = data;
+  const fontSize = window.innerWidth > 1000 ? '3vw' : '18px';
 
   const { temp, feels_like, humidity, wind_speed, weather } = current;
   const { temp: daily_temp } = daily[0];
@@ -65,14 +66,16 @@ export default function Result(props) {
             <h1
               style={{
                 margin: 0,
-                color: '#696969'
+                color: '#696969',
+                fontSize
               }}
             >
               { field.label } :
             </h1>
             <h1
               style={{
-                margin: 0
+                margin: 0,
+                fontSize
               }}
             >
               &nbsp;&nbsp;{ field.value }
