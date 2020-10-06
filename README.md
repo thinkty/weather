@@ -1,21 +1,23 @@
 # Weather
 
-A simple weather application with a goal to reach 100% on Google Lighthouse
+A simple weather application with [100%](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fweather.thinkty.net%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa) on [Google Lighthouse](https://developers.google.com/web/tools/lighthouse)
+
+![lighthouse](https://imgur.com/kNV2RnF.png)
 
 ## PWA Checklist
 
 Below is a checklist created based on the checklist provided [here](https://web.dev/pwa-checklist/)
 
-- [ ] Starts fast, stays fast
-- [ ] Works in any browser
-- [ ] Responsive
-- [ ] Custom offline page
-- [ ] Installable
-- [ ] Fully accessible ([WCAG 2.0](https://www.w3.org/TR/WCAG20/))
-- [ ] Discoverable through search
-- [ ] Works with any input type
-- [ ] Provides context for permission requests
-- [ ] Follows best practices for healthy code
+- [x] Starts fast, stays fast
+- [x] Works in any browser
+- [x] Responsive
+- [x] Custom offline page
+- [x] Installable
+- [x] Fully accessible ([WCAG 2.0](https://www.w3.org/TR/WCAG20/))
+- [x] Discoverable through search
+- [x] Works with any input type
+- [x] Provides context for permission requests
+- [x] Follows best practices for healthy code
 
 ## Useful Links
 
