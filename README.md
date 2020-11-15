@@ -1,4 +1,4 @@
-# Weather
+# Weather - [ API SERVER DISABLED ]
 
 A simple weather application with [100%](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fweather.thinkty.net%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa) on [Google Lighthouse](https://developers.google.com/web/tools/lighthouse)
 
